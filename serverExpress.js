@@ -49,9 +49,6 @@ server.post('/students', async (req, res) => {
     res.end();
 })
 server.post('/groups', async (req, res) => {
-     //console.log(req.body.project)
-     //console.log(req.body.number)
-
      let newProject = req.body.project
      let num = req.body.number
      await helper.newGroup(newProject, num)// add the new student to the data base
