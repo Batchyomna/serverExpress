@@ -33,9 +33,11 @@
                 <% for (var i=0; i< groups.length; i++) {%>
                 <div class="newgroup">
                     <h3><%= groups[i].name %> (<%= groups[i].num %>)</h3>
+                        <% for (var x=0; x< groups[i].studentsNames.length; x++) {%>
                     <p>
-                        <%= groups[i].studentsNames %>
+                        <%= groups[i].studentsNames[x] %>
                     </p>
+                       <% } %>
                 </div>
 
                 <% } %>
